@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 String niveau = spinner.getSelectedItem().toString();
-
                 // Créer un Intent pour passer à l'activité d'affichage des informations
                 Intent intent = new Intent(MainActivity.this, AffichageInfoActivity.class);
                 intent.putExtra("name", nomPrenom);
@@ -75,22 +74,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         Spinner spinner = findViewById(R.id.spinner);
-
 
         List<String> options = new ArrayList<>();
         options.add("1ère");
         options.add("2ème");
         options.add("3ème");
 
-
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, options);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-
         spinner.setAdapter(adapter);
-
     }
 }
 
