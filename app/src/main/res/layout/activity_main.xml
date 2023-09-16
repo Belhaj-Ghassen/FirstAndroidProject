@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="text1">
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        android:text="TP1 Android (ENIG)"
+        android:textAlignment="center"
+        android:textColor="#4351AF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nom et Prenom"
+        android:textColor="#9E9292"
+        android:textSize="20sp" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Département"
+        android:textColor="#AC9A9A"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GCR"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GEA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=" Matière"
+        android:textColor="#B5A2A2"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/chb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHP"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Niveau"
+        android:textColor="#9E9797"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150px"
+        android:layoutDirection="locale"
+        android:text="ENREGISTRER"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+</LinearLayout>
